@@ -65,9 +65,10 @@ footer{
     font-size: 25px;
     padding: 10px;
 }
-/* #search>input:focus{
+#search>input:focus{
     border: none;
-} */
+    outline: none;
+}
 #search>button {
     width: 18%;
     border: none;
