@@ -57,7 +57,7 @@ footer{
 
 #search>input{
     border: none;
-    width: 90%;
+    width: 80%;
     font-size: 25px;
     padding: 10px;
 }
@@ -65,9 +65,10 @@ footer{
     border: none;
 } */
 #search>button {
-    width: 8%;
+    width: 18%;
     border: none;
     background-color: #ffffff;
+    text-align: right;
 }
 
 #search{
@@ -80,11 +81,46 @@ footer{
 }
 
 .search-img{
-    height: 50%;
+    max-height: 50%;
     padding-right: 10px;
+    max-width: 100%;
 }
 
 .flex-center{
     display: flex;
     justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#about{
+    padding: 15px;
+}
+
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer-text{
+    margin: auto 0 auto 0;
+}
+
+@media only screen and (max-width: 400px){
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-link{
+        padding-left: 0;
+    }
 }
