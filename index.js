@@ -30,3 +30,13 @@ async function getData(){
             document.getElementById("micr").innerText = "...";
         })
 }
+
+
+//Listen to Enter press
+let input = document.getElementById("ifsc-input");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        getData();
+    }
+});
