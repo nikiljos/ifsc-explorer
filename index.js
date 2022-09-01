@@ -1,4 +1,5 @@
 async function getData(){
+    document.getElementById("ifsc").innerText = "Loading...";
     let ifsc=document.getElementById("ifsc-input").value
     fetch(`https://ifsc.razorpay.com/${ifsc}`)
         .then((res) => {
@@ -10,7 +11,7 @@ async function getData(){
             }
         })
         .then(data=>{
-            console.log(data)
+            // console.log(data)
             document.getElementById("ifsc").innerText = data.IFSC;
             document.getElementById("bank").innerText=data.BANK
             document.getElementById("branch").innerText=data.BRANCH

@@ -10,14 +10,24 @@
 <body>
 
     <nav>
-        <h1>The IFSC Explorer</h1>
+        <h1 class="logo">The IFSC Explorer</h1>
+        <div class="small-padding">
+            <a href="#search" class="small-padding link">Search</a>
+            <a href="#about" class="small-padding link">About</a>
+        </div>
     </nav>
     <div>
-        <div>
-            <input type="text" id="ifsc-input">
-            <button onclick="getData()">Search</button>
+        <div class="flex-center">
+            <div id="search" class="flex">
+                <input type="text" id="ifsc-input" placeholder="Enter an IFSC Code">
+                <button onclick="getData()"><img class="search-img" src="assets/search.png" alt="Search"></button>
+            </div>
         </div>
-        <div>
+        <!-- <div  id="search" class="flex">
+            <input type="text" id="ifsc-input">
+            <button onclick="getData()"><img class="search-img" src="assets/search.png" alt=""></button>
+        </div> -->
+        <div class="databox">
             <div id="ifsc" class="vardata small-padding">Please Enter an IFSC Code</div>
             <div class="small-padding">Bank: <span class="vardata" id="bank">...</span></div>
             <div class="small-padding">Branch: <span class="vardata" id="branch">...</span></div>
@@ -26,8 +36,30 @@
             <div class="small-padding">Address: <span class="vardata" id="address">...</span></div>
             <div class="small-padding">MICR Code: <span class="vardata" id="micr">...</span></div>
         </div>
+
+        <div class="spacer"></div>
+
+        <div id="about">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus metus aliquam eleifend mi in nulla posuere. Faucibus vitae aliquet nec ullamcorper sit amet. Urna porttitor rhoncus dolor purus non enim praesent. Eleifend quam adipiscing vitae proin sagittis. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Volutpat lacus laoreet non curabitur gravida arcu. Arcu dictum varius duis at consectetur lorem donec. Neque convallis a cras semper auctor neque vitae tempus. Sollicitudin nibh sit amet commodo nulla facilisi. 
+            </p>
+        </div>
+
+        <div class="spacer"></div>
         
     </div>
+
+    <footer>
+        <div>
+            <h3>The IFSC Explorer</h3>
+            <div>&copy; 2022</div>
+        </div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#search">Search</a>
+        </div>
+    </footer>
 
     <script src="index.js"></script>
     
