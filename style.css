@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .small-padding{
     padding: 5px;
 }
@@ -78,6 +82,7 @@ footer{
     width:70vw;
     max-width: 725px;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .search-img{
