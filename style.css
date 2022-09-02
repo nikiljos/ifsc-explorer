@@ -117,6 +117,10 @@ footer{
     margin: auto 0 auto 0;
 }
 
+.text-link{
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 400px){
 
     nav{
