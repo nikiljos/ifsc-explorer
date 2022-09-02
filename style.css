@@ -27,14 +27,19 @@ html {
 }
 
 nav{
-    margin: 20px 10px 30px 10px;
+    padding: 20px 10px 20px 10px;
     display: flex;
     justify-content: space-between;
+    background-color: #dddddd;
 }
 
 .link{
     color: black;
     text-decoration: none;
+}
+
+.link:hover{
+    color: #0B0080;
 }
 
 .logo{
@@ -76,6 +81,13 @@ footer{
     text-align: right;
 }
 
+#search>button:hover {
+    width: 18%;
+    border: none;
+    background-color: #dddddd;
+    text-align: right;
+}
+
 #search{
     border-style: solid;
     border-color: black;
@@ -83,7 +95,7 @@ footer{
     width:70vw;
     max-width: 725px;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .search-img{
